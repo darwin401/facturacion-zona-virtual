@@ -122,7 +122,13 @@ export class SaleComponent implements OnInit {
   getBill(id: number) {
     const bill = this.billingService.getBillById(id);
 
-    let fecha = bill.Trans_fecha.replace(/\//g, '-').split(' ', 1)[0];
+    let fecha = new Date(bill.Trans_fecha.split(' ', 1)[0]);
+
+    if (fecha.toString() === 'Invalid Date') {
+      const format = bill.Trans_fecha.split(' ', 1)[0];
+      const [dia, mes, anio] = format.split('/');
+      fecha = new Date(`${mes}/${dia}/${anio}`);
+    }
 
     this.formNewBill.setValue({
       comercio_codigo: bill.comercio_codigo,
