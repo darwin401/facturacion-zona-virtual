@@ -8,7 +8,7 @@ import { OptionsList } from '../interfaces/optionsList';
 })
 export class BillingService {
   invoiceStatus: OptionsList[] = [
-    { value: 1, description: 'Aprovada' },
+    { value: 1, description: 'Aprobada' },
     { value: 1000, description: 'Rechazada' },
     { value: 999, description: 'Pendiente' },
   ];
