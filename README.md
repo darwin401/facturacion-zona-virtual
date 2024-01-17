@@ -1,4 +1,5 @@
 # Prueba Zona Virtual
+En el siguiente enlace se puede observar la aplicación delegada: https://facturacion-zona-virtual.netlify.app para temas de facilidad al momento de revisar el funcionamiento. 
 ## Descripción del Proyecto
 Este repositorio contiene la solución a una prueba técnica Frontend utilizando Angular. El proyecto está enfocado en resolver desafíos específicos a través de la implementación de funcionalidades y componentes dentro del framework Angular.
 
