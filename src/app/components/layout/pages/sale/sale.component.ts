@@ -157,7 +157,6 @@ export class SaleComponent implements OnInit {
     const diaFormateado = dia < 10 ? `0${dia}` : dia;
 
     return `${anio}/${mesFormateado}/${diaFormateado}`;
-    // return `${diaFormateado}/${mesFormateado}/${anio}`;
   }
 
   validateMethods(methodId: number) {
@@ -171,5 +170,8 @@ export class SaleComponent implements OnInit {
       (status) => status.value === statusId
     );
     return status ? statusId : this.pendingStatusCode;
+  }
+  cancel(){
+    this.router.navigateByUrl('/billing/historial');
   }
 }

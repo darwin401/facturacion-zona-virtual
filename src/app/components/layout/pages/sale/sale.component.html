@@ -131,9 +131,15 @@
         <button *ngIf="!id" mat-raised-button color="primary" style="width: 30%;" >
           <mat-icon mat-list-icon>add</mat-icon>Nuevo registro
         </button>
-        <button *ngIf="id" type="button" (click)="update()" mat-raised-button color="primary" style="width: 30%;" >
-          <mat-icon mat-list-icon>edit</mat-icon>Actualizar registro
-        </button>
+
+        <div *ngIf="id" style="display: flex; justify-content: space-between;">
+          <button type="button" (click)="update()" mat-raised-button color="primary" style="width: 30%;" >
+            <mat-icon mat-list-icon>edit</mat-icon>Actualizar registro
+          </button>
+          <button mat-raised-button mat-dialog-close cdkFocusInitial color="warn" type="button" (click)="cancel()">
+            Volver
+          </button>
+        </div>
 
       </div>
 
