@@ -172,6 +172,6 @@ export class SaleComponent implements OnInit {
     return status ? statusId : this.pendingStatusCode;
   }
   cancel(){
-    this.router.navigateByUrl('/billing/historial');
+    this.router.navigate(['/billing/historial']);
   }
 }
