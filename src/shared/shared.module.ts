@@ -25,8 +25,6 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
-
-
 @NgModule({
   declarations: [],
   imports: [
@@ -57,7 +55,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatTooltipModule,
     MatAutocompleteModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ],
   exports: [
     CommonModule,
@@ -87,7 +85,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatTooltipModule,
     MatAutocompleteModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
   ]
 })
 export class SharedModule { }

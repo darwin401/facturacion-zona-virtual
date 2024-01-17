@@ -2,11 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Bill } from '../interfaces/bill';
 import { OptionsList } from '../interfaces/optionsList';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class BillingService {
+
   invoiceStatus: OptionsList[] = [
     { value: 1, description: 'Aprobada' },
     { value: 1000, description: 'Rechazada' },
