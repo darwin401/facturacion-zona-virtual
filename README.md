@@ -1,27 +1,16 @@
 # PruebaZonaVirtual
+## Descripción del Proyecto
+Este repositorio contiene la solución a una prueba técnica Frontend utilizando Angular. El proyecto está enfocado en resolver desafíos específicos a través de la implementación de funcionalidades y componentes dentro del framework Angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+## Desafio propuesto
+Crear un sistema de registro de facturación, donde se visualizan históricos de facturas, detalles de la misma, también se pueden crear, editar y visualizar las facturas creadas y existentes, adicional tiene un filtro donde se pueden buscar por fechas o código de transacción, con su respectivas navegaciones.
 
-## Development server
+## Para correr el proyecto 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para correr el proyecto, se debe abrir el proyecto en la carpeta raíz y correr los comandos:  ‘ng serve’ o ‘ng serve -o’ para que abra el navegador cuando la aplicación compile. En el navegador poner la siguiente ruta http://localhost:4200.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
