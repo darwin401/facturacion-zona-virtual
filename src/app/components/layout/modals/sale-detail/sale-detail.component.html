@@ -1,0 +1,76 @@
+<h2 mat-dialog-title>Detalle de Facturación</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="content-detail">
+    <label>
+      Código de Transacción
+      <p>{{ Trans_codigo }}</p>
+    </label>
+    <label>
+      Fecha de Registro
+      <p>{{ Trans_fecha }}</p>
+    </label>
+  </div>
+
+  <div class="content-detail">
+    <label>
+      Comercio
+      <p>{{ comercio_nombre | titlecase }}</p>
+    </label>
+    <label>
+      Dirección
+      <p>{{ comercio_direccion }}</p>
+    </label>
+  </div>
+
+  <div class="content-detail">
+    <label>
+      Código del Comercio
+      <p>{{ comercio_codigo }}</p>
+    </label>
+    <label>
+      NIT
+      <p>{{ comercio_nit }}</p>
+    </label>
+  </div>
+
+  <div class="content-detail">
+    <label>
+      Medio de Pago
+      <p>{{ Trans_medio_pago }}</p>
+    </label>
+    <label>
+      Estado
+      <p>{{ Trans_estado }}</p>
+    </label>
+  </div>
+
+  <div class="content-detail">
+    <label>
+      Concepto
+      <p>{{ Trans_concepto | titlecase }}</p>
+    </label>
+    <label>
+      Total
+      <p>{{ Trans_total | currency }}</p>
+    </label>
+  </div>
+
+  <strong>Usuario Responsable</strong>
+  <mat-divider></mat-divider>
+
+  <div class="content-detail">
+    <label>
+      Nombre
+      <p>{{ usuario_nombre | titlecase }}</p>
+    </label>
+    <label>
+      Correo
+      <p>{{ usuario_email }}</p>
+    </label>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close cdkFocusInitial color="warn">
+    Cerrar
+  </button>
+</mat-dialog-actions>

@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Sistema de registro de ventas</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav opened="true" mode="side" style="width: 250px;">
+    <mat-nav-list>
+
+      <mat-list-item routerLink="/billing/historial">
+        <mat-icon matListItemIcon>history</mat-icon>
+        <div matListItemTitle>Historial</div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="/billing/registrar">
+        <mat-icon matListItemIcon>currency_exchange</mat-icon>
+        <div matListItemTitle>Nuevo Registro</div>
+      </mat-list-item>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div style="height: 89vh; padding: 10px;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+
+
+</mat-sidenav-container>

@@ -1,0 +1,7 @@
+.actions {
+  display: flex;
+}
+.edit {
+  cursor: pointer;
+  color: #1878B0;
+ }
